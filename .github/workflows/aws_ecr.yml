@@ -1,0 +1,21 @@
+name: Build and push Docker images to AWS ECR
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: kciter/aws-ecr-action@v1
+      with:
+        access_key_id: ${{ secrets.AWS_ACCESS_KEY }}
+        secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        account_id: ${{ secrets.AWS_ACCOUNT_ID }}
+        repo: 811116569341.dkr.ecr.us-east-2.amazonaws.com/spring-boot-docker
+        region: ${{ secrets.AWS_REGION }}
+        tags: latest
+        create_repo: true
