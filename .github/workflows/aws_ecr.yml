@@ -20,6 +20,6 @@ jobs:
         secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         account_id: ${{ secrets.AWS_ACCOUNT_ID }}
         repo: spring-boot-docker
-        region: ${{ secrets.AWS_REGION }
+        region: ${{ secrets.AWS_REGION }}
         tags: ${{ env.RELEASE_VERSION }}
         create_repo: true
