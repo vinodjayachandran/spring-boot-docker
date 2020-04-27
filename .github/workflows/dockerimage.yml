@@ -21,3 +21,4 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: "latest,${{ env.RELEASE_VERSION }}"
+        buildoptions: "--compress --force-rm"
