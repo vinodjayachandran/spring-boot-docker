@@ -1,5 +1,5 @@
 # spring-boot-docker
-Spring Boot Application on Docker.
+Getting Started with Docker using Spring Boot
 
 ## Maven Build the code :
   mvn install
@@ -23,7 +23,7 @@ Spring Boot Application on Docker.
 
 **Example** : `docker run -p 8080:8080 -t vinodjayachandran/spring-boot-docker:1.0 --name=MyTestContainer`
 
-4. Verify if the container is up with either one of the below commands. Your image will be listed with status as up along with container id. Without the option **--all** it will list only running containers
+4. Verify if the container is up. Your image will be listed with status as up along with container id. Without the option **--all** it will list only running containers
 
 **Example**
 
