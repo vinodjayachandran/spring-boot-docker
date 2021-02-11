@@ -17,7 +17,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: vinodjayachandran/spring-boot-docker
+        name: rassidm/spring-boot-docker
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: "latest,${{ env.RELEASE_VERSION }}"
