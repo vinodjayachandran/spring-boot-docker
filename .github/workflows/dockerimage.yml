@@ -15,7 +15,7 @@ jobs:
 #      id: get_version
 #      run: echo ::set-env name=RELEASE_VERSION::`date +%F-%I-%M`
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: rassidm/spring-boot-docker
         username: ${{ secrets.DOCKER_USERNAME }}
